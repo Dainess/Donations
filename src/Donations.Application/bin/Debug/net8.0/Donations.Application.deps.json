@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Donations.Application/1.0.0": {
+        "dependencies": {
+          "Donations.Communication": "1.0.0"
+        },
+        "runtime": {
+          "Donations.Application.dll": {}
+        }
+      },
+      "Donations.Communication/1.0.0": {
+        "runtime": {
+          "Donations.Communication.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Donations.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Donations.Communication/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

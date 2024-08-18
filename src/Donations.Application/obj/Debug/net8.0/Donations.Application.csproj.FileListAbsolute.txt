@@ -1,0 +1,15 @@
+D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Application\bin\Debug\net8.0\Donations.Application.deps.json
+D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Application\bin\Debug\net8.0\Donations.Application.dll
+D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Application\bin\Debug\net8.0\Donations.Application.pdb
+D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Application\bin\Debug\net8.0\Donations.Communication.dll
+D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Application\bin\Debug\net8.0\Donations.Communication.pdb
+D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Application\obj\Debug\net8.0\Donations.Application.csproj.AssemblyReference.cache
+D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Application\obj\Debug\net8.0\Donations.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Application\obj\Debug\net8.0\Donations.Application.AssemblyInfoInputs.cache
+D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Application\obj\Debug\net8.0\Donations.Application.AssemblyInfo.cs
+D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Application\obj\Debug\net8.0\Donations.Application.csproj.CoreCompileInputs.cache
+D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Application\obj\Debug\net8.0\Donation.F53F6AD7.Up2Date
+D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Application\obj\Debug\net8.0\Donations.Application.dll
+D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Application\obj\Debug\net8.0\refint\Donations.Application.dll
+D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Application\obj\Debug\net8.0\Donations.Application.pdb
+D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Application\obj\Debug\net8.0\ref\Donations.Application.dll

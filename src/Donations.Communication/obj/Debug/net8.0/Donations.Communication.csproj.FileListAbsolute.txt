@@ -1,0 +1,11 @@
+D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Communication\bin\Debug\net8.0\Donations.Communication.deps.json
+D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Communication\bin\Debug\net8.0\Donations.Communication.dll
+D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Communication\bin\Debug\net8.0\Donations.Communication.pdb
+D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Communication\obj\Debug\net8.0\Donations.Communication.GeneratedMSBuildEditorConfig.editorconfig
+D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Communication\obj\Debug\net8.0\Donations.Communication.AssemblyInfoInputs.cache
+D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Communication\obj\Debug\net8.0\Donations.Communication.AssemblyInfo.cs
+D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Communication\obj\Debug\net8.0\Donations.Communication.csproj.CoreCompileInputs.cache
+D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Communication\obj\Debug\net8.0\Donations.Communication.dll
+D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Communication\obj\Debug\net8.0\refint\Donations.Communication.dll
+D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Communication\obj\Debug\net8.0\Donations.Communication.pdb
+D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Communication\obj\Debug\net8.0\ref\Donations.Communication.dll
