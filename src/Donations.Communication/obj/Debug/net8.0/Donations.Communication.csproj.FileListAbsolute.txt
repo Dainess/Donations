@@ -9,3 +9,4 @@ D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Communication\ob
 D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Communication\obj\Debug\net8.0\refint\Donations.Communication.dll
 D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Communication\obj\Debug\net8.0\Donations.Communication.pdb
 D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Communication\obj\Debug\net8.0\ref\Donations.Communication.dll
+D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Communication\obj\Debug\net8.0\Donations.Communication.sourcelink.json

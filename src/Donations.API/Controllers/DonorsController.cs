@@ -44,17 +44,30 @@ public class DonorsController : ControllerBase
     }
 
     [HttpPut]
-    [Route("{donorId}/{complete}")]
+    [Route("{donorId}/activitystatus/{status}")]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(typeof(ResponseErrorsJson), StatusCodes.Status404NotFound)]
-    public IActionResult CompleteActivity(
+    public IActionResult ChangeActivityStatus(
         [FromRoute] Guid donorId,
-        [FromRoute] bool complete)
+        [FromRoute] bool status)
     {
-        var useCase = new ChangeActiveStatusForDonorUseCase();
-        useCase.Execute(donorId, complete);
+        var useCase = new ChangeActiveStatusOfDonorUseCase();
+        useCase.Execute(donorId, status);
         return NoContent();
     }
+
+    // [HttpPut]
+    // [Route("{donorId}/address/{address}")]
+    // [ProducesResponseType(StatusCodes.Status204NoContent)]
+    // [ProducesResponseType(typeof(ResponseErrorsJson), StatusCodes.Status404NotFound)]
+    // public IActionResult ChangeAddress(
+    //     [FromRoute] Guid donorId,
+    //     [FromRoute] bool address)
+    // {
+    //     var useCase = new ChangeAddressOfDonorUseCase();
+    //     useCase.Execute(donorId, address);
+    //     return NoContent();
+    // }
 
     [HttpDelete]
     [Route("{id}")]

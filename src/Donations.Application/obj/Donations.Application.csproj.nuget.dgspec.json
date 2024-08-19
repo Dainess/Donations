@@ -35,8 +35,8 @@
               "D:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.Exception\\Donations.Exception.csproj": {
                 "projectPath": "D:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.Exception\\Donations.Exception.csproj"
               },
-              "D:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.Infrastructure\\Donations.Infrastructure.csproj": {
-                "projectPath": "D:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.Infrastructure\\Donations.Infrastructure.csproj"
+              "d:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.Infrastructure\\Donations.Infrastructure.csproj": {
+                "projectPath": "d:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.Infrastructure\\Donations.Infrastructure.csproj"
               }
             }
           }
@@ -203,14 +203,14 @@
         }
       }
     },
-    "D:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.Infrastructure\\Donations.Infrastructure.csproj": {
+    "d:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.Infrastructure\\Donations.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.Infrastructure\\Donations.Infrastructure.csproj",
+        "projectUniqueName": "d:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.Infrastructure\\Donations.Infrastructure.csproj",
         "projectName": "Donations.Infrastructure",
-        "projectPath": "D:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.Infrastructure\\Donations.Infrastructure.csproj",
+        "projectPath": "d:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.Infrastructure\\Donations.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Mitt\\.nuget\\packages\\",
-        "outputPath": "D:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.Infrastructure\\obj\\",
+        "outputPath": "d:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mitt\\AppData\\Roaming\\NuGet\\NuGet.Config",

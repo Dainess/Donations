@@ -4,16 +4,16 @@ using Donations.Infrastructure;
 
 namespace Donations.Application.UseCases.Donors.ActiveStatus
 {
-    public class ChangeActiveStatusForDonorUseCase
+    public class ChangeActiveStatusOfDonorUseCase
     {
         private readonly DonationsDbContext _dbContext;
 
-        public ChangeActiveStatusForDonorUseCase()
+        public ChangeActiveStatusOfDonorUseCase()
         {
             _dbContext = new DonationsDbContext();
         }
 
-        public void Execute(Guid donorId, bool complete)
+        public void Execute(Guid donorId, bool status)
         {
             var donor = _dbContext
                 .Donors
@@ -22,7 +22,7 @@ namespace Donations.Application.UseCases.Donors.ActiveStatus
             if (donor is null)
                 throw new NotFoundException(ExceptionMessages.DONOR_NOT_FOUND_MESSAGE); //ResourceManagement.SpitResource("ACTIVITY_NOT_FOUND")
             
-            donor.ActiveStatus = false;
+            donor.ActiveStatus = status;
 
             _dbContext.Donors.Update(donor);
             _dbContext.SaveChanges();

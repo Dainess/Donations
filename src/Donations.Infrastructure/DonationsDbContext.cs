@@ -33,6 +33,7 @@ public class DonationsDbContext : DbContext
     {
         base.OnModelCreating(modelBuilder);
 
-        //modelBuilder.Entity<Activity>().ToTable("Activities");
+        modelBuilder.Entity<Pledge>().ToTable("Pledges");
+        modelBuilder.Entity<Payment>().ToTable("Payments");
     }
 }

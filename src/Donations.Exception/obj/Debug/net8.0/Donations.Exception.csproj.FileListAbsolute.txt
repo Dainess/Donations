@@ -9,3 +9,4 @@ D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Exception\obj\De
 D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Exception\obj\Debug\net8.0\refint\Donations.Exception.dll
 D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Exception\obj\Debug\net8.0\Donations.Exception.pdb
 D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Exception\obj\Debug\net8.0\ref\Donations.Exception.dll
+D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Exception\obj\Debug\net8.0\Donations.Exception.sourcelink.json
