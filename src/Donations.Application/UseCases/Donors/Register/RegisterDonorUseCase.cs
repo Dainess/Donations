@@ -1,5 +1,7 @@
 using Donations.Communication.Requests;
 using Donations.Communication.Responses;
+using Donations.Infrastructure;
+using Donations.Infrastructure.Entities;
 
 namespace Donations.Application.UseCases.Donors.Register;
 public class RegisterDonorUseCase
@@ -8,24 +10,25 @@ public class RegisterDonorUseCase
     {
         //Validate(request);
 
-        //var dbContext = new JourneyDbContext();
+        var dbContext = new DonationsDbContext();
 
-        // var entity = new Trip 
-        // {
-        //     Name = request.Name,
-        //     StartDate = request.StartDate,
-        //     EndDate = request.EndDate,
-        // };
+        var entity = new Donor
+        {
+            Name = request.Name,
+            Address = request.Address,
+            ActiveStatus = request.ActiveStatus,
+        };
 
-        // dbContext.Trips.Add(entity);
+        dbContext.Donors.Add(entity);
 
-        // dbContext.SaveChanges();
+        dbContext.SaveChanges();
 
         return new ResponseShortDonorJson 
         {
-            Name = "Jão",
-            Address = "Rua Bueno de Paiva, 200, 204",
-            ActiveStatus = true
+            Id = entity.Id,
+            Name = entity.Name,
+            Address = entity.Address,
+            ActiveStatus = entity.ActiveStatus
         };
     }
 

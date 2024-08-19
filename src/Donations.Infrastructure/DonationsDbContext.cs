@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Donations.Infrastructure;
 
-public class JourneyDbContext : DbContext
+public class DonationsDbContext : DbContext
 {
     public DbSet<Donor> Donors { get; set; }
     //public DbSet<Pledge> Pledges { get; set; }
@@ -15,11 +15,10 @@ public class JourneyDbContext : DbContext
     {
         try
         {
-            string baseDirectory = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location) 
-                ?? throw new Exception("Directory path does not contain a valid database");
-            string upperDirectory = baseDirectory.Replace("src\\Journey.Api\\bin\\Debug\\net8.0", "");
-            string dbPath = Path.Combine(upperDirectory, "JourneyDatabase.db");
-            //optionsBuilder.UseSqlite($"Data Source={dbPath}");
+            var connectionString = "server=localhost;user=root;password=dainess1942;database=donations";
+            var serverVersion = new MySqlServerVersion(new Version(8, 0, 36));
+
+            optionsBuilder.UseMySql(connectionString, serverVersion);
         }
         catch(Exception ex)
         {

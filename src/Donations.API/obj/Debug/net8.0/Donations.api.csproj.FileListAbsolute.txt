@@ -35,3 +35,10 @@ D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.API\obj\Debug\ne
 D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.API\obj\Debug\net8.0\Donations.api.pdb
 D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.API\obj\Debug\net8.0\Donations.api.genruntimeconfig.cache
 D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.API\obj\Debug\net8.0\ref\Donations.api.dll
+D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.API\bin\Debug\net8.0\MySqlConnector.dll
+D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.API\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
+D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.API\bin\Debug\net8.0\Donations.Infrastructure.dll
+D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.API\bin\Debug\net8.0\Donations.Infrastructure.pdb

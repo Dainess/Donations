@@ -14,6 +14,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Donations.Application\Donations.Application.csproj" />
     <ProjectReference Include="..\Donations.Communication\Donations.Communication.csproj" />
+    <ProjectReference Include="..\Donations.Exception\Donations.Exception.csproj" />
   </ItemGroup>
 
 </Project>

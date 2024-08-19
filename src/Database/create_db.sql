@@ -1,0 +1,46 @@
+DROP DATABASE IF EXISTS `donations`;
+CREATE DATABASE `donations`; 
+USE `donations`;
+
+SET NAMES utf8 ;
+SET character_set_client = utf8mb4 ;
+
+CREATE TABLE Donors (
+    Id VARCHAR(36) NOT NULL PRIMARY KEY,
+    Name TEXT NOT NULL,
+    Address TEXT NOT NULL,
+    ActiveStatus BOOLEAN DEFAULT TRUE
+);
+
+CREATE TABLE Pledges (
+    Id VARCHAR(36) NOT NULL PRIMARY KEY,
+    DonorId VARCHAR(36) NOT NULL,
+    PledgeDate DATE NOT NULL,
+    Amount DECIMAL(10, 2) NOT NULL,
+    FOREIGN KEY (DonorId) REFERENCES Donors(Id) ON DELETE CASCADE
+);
+
+CREATE TABLE Payments (
+    Id VARCHAR(36) NOT NULL PRIMARY KEY,
+    DonorId VARCHAR(36) NOT NULL,
+    PaymentDate DATE NOT NULL,
+    Amount DECIMAL(10, 2) NOT NULL,
+    FOREIGN KEY (DonorId) REFERENCES Donors(Id) ON DELETE CASCADE
+);
+
+CREATE TABLE PledgePayment (
+    PledgeId VARCHAR(36) NOT NULL,
+    PaymentId VARCHAR(36) NOT NULL,
+    PRIMARY KEY (PledgeId, PaymentId),
+    FOREIGN KEY (PaymentId) REFERENCES Payments(Id) ON DELETE CASCADE,
+    FOREIGN KEY (PledgeId) REFERENCES Pledges(Id) ON DELETE CASCADE
+);
+
+CREATE TABLE Changelog (
+    Id VARCHAR(36) NOT NULL PRIMARY KEY,
+    TableName VARCHAR(100) NOT NULL,
+    RecordID VARCHAR(36) NOT NULL,
+    ChangeType ENUM('INSERT', 'UPDATE', 'DELETE') NOT NULL,
+    ChangeDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    ChangeDescription TEXT
+);

@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Donations.Communication\Donations.Communication.csproj" />
+    <ProjectReference Include="..\Donations.Infrastructure\Donations.Infrastructure.csproj" />
   </ItemGroup>
 
   <PropertyGroup>
