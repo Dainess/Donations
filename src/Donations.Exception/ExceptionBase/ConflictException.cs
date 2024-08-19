@@ -4,7 +4,7 @@ namespace Donations.Exception.ExceptionBase
 {
     public class ConflictException : DonationsException
     {
-        public NotFoundException(string message) : base(message)
+        public ConflictException(string message) : base(message)
         {
         }
 
