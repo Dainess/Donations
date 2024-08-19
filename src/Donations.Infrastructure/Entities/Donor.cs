@@ -5,7 +5,7 @@ public class Donor
     public Guid Id { get; set; } = Guid.NewGuid();
     public string Name { get; set; } = string.Empty;
     public string Address { get; set; } = string.Empty;
-    public bool ActiveStatus { get; set; }
+    public bool ActiveStatus { get; set; } = true;
     public IList<Payment> Payments = [];
     public IList<Pledge> Pledges = [];
 

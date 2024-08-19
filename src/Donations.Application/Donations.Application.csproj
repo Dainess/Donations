@@ -3,6 +3,11 @@
   <ItemGroup>
     <ProjectReference Include="..\Donations.Communication\Donations.Communication.csproj" />
     <ProjectReference Include="..\Donations.Infrastructure\Donations.Infrastructure.csproj" />
+    <ProjectReference Include="..\Donations.Exception\Donations.Exception.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="8.2.1" />
   </ItemGroup>
 
   <PropertyGroup>

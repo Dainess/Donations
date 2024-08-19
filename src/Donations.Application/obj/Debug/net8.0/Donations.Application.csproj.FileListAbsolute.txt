@@ -15,3 +15,5 @@ D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Application\obj\
 D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Application\obj\Debug\net8.0\ref\Donations.Application.dll
 D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Application\bin\Debug\net8.0\Donations.Infrastructure.dll
 D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Application\bin\Debug\net8.0\Donations.Infrastructure.pdb
+D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Application\bin\Debug\net8.0\Donations.Exception.dll
+D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Application\bin\Debug\net8.0\Donations.Exception.pdb

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "nk3x580qIcg=",
+  "dgSpecHash": "WBYS/o9zrYQ=",
   "success": true,
-  "projectFilePath": "D:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.API\\Donations.Api.csproj",
+  "projectFilePath": "D:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.API\\Donations.api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Mitt\\.nuget\\packages\\fluentvalidation\\8.2.1\\fluentvalidation.8.2.1.nupkg.sha512",
     "C:\\Users\\Mitt\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.7\\microsoft.aspnetcore.openapi.8.0.7.nupkg.sha512",
     "C:\\Users\\Mitt\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.8\\microsoft.entityframeworkcore.8.0.8.nupkg.sha512",
     "C:\\Users\\Mitt\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.8\\microsoft.entityframeworkcore.abstractions.8.0.8.nupkg.sha512",
@@ -25,7 +26,8 @@
     "C:\\Users\\Mitt\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
     "C:\\Users\\Mitt\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
     "C:\\Users\\Mitt\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
-    "C:\\Users\\Mitt\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+    "C:\\Users\\Mitt\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512",
+    "C:\\Users\\Mitt\\.nuget\\packages\\system.componentmodel.annotations\\4.4.1\\system.componentmodel.annotations.4.4.1.nupkg.sha512"
   ],
   "logs": []
 }

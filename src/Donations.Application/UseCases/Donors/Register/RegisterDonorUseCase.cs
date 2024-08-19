@@ -1,5 +1,6 @@
 using Donations.Communication.Requests;
 using Donations.Communication.Responses;
+using Donations.Exception.ExceptionBase;
 using Donations.Infrastructure;
 using Donations.Infrastructure.Entities;
 
@@ -8,7 +9,7 @@ public class RegisterDonorUseCase
 {
     public ResponseShortDonorJson Execute(RequestRegisterDonorJson request)
     {
-        //Validate(request);
+        Validate(request);
 
         var dbContext = new DonationsDbContext();
 
@@ -16,7 +17,6 @@ public class RegisterDonorUseCase
         {
             Name = request.Name,
             Address = request.Address,
-            ActiveStatus = request.ActiveStatus,
         };
 
         dbContext.Donors.Add(entity);
@@ -32,17 +32,17 @@ public class RegisterDonorUseCase
         };
     }
 
-    // private void Validate(RequestRegisterTripJson request)
-    // {
-    //     var validator = new RegisterTripValidator();
-    //     var result = validator.Validate(request);
+    private void Validate(RequestRegisterDonorJson request)
+    {
+        var validator = new RegisterDonorValidator();
+        var result = validator.Validate(request);
 
-    //     if (result.IsValid == false)
-    //     {
-    //         var errorMessages = result.Errors.Select(error => error.ErrorMessage).ToList();
+        if (result.IsValid == false)
+        {
+            var errorMessages = result.Errors.Select(error => error.ErrorMessage).ToList();
 
-    //         throw new ErrorOnValidationException(errorMessages);
-    //     }
-    // }
+            throw new ErrorOnValidationException(errorMessages);
+        }
+    }
 
 }

@@ -3,6 +3,7 @@ using Donations.Communication.Responses;
 using Donations.Exception.ExceptionBase;
 //using Donations.Exception.ResourceManagement;
 using Microsoft.AspNetCore.Mvc;
+using Donations.Exception.Resources;
 
 namespace Donations.API.Filters
 {
@@ -21,7 +22,7 @@ public class ExceptionFilter : IExceptionFilter
         else
         {
             context.HttpContext.Response.StatusCode = StatusCodes.Status500InternalServerError;
-            var responseJson = new ResponseErrorsJson(new List<string> {ResourceManagement.SpitResource("UNKNOWN_ERROR")});
+            var responseJson = new ResponseErrorsJson(new List<string> {ExceptionMessages.UNKNOWN_ERROR_MESSAGE}); //ResourceManagement.SpitResource("UNKNOWN_ERROR")
             context.Result = new ObjectResult(responseJson);
         }
     }
