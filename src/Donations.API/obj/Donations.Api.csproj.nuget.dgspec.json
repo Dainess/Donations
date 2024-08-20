@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.API\\Donations.Api.csproj": {}
+    "D:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.API\\Donations.api.csproj": {}
   },
   "projects": {
-    "d:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.API\\Donations.Api.csproj": {
+    "D:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.API\\Donations.api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.API\\Donations.Api.csproj",
-        "projectName": "Donations.Api",
-        "projectPath": "d:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.API\\Donations.Api.csproj",
+        "projectUniqueName": "D:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.API\\Donations.api.csproj",
+        "projectName": "Donations.api",
+        "projectPath": "D:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.API\\Donations.api.csproj",
         "packagesPath": "C:\\Users\\Mitt\\.nuget\\packages\\",
-        "outputPath": "d:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.API\\obj\\",
+        "outputPath": "D:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mitt\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -119,8 +119,8 @@
               "D:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.Exception\\Donations.Exception.csproj": {
                 "projectPath": "D:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.Exception\\Donations.Exception.csproj"
               },
-              "d:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.Infrastructure\\Donations.Infrastructure.csproj": {
-                "projectPath": "d:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.Infrastructure\\Donations.Infrastructure.csproj"
+              "D:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.Infrastructure\\Donations.Infrastructure.csproj": {
+                "projectPath": "D:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.Infrastructure\\Donations.Infrastructure.csproj"
               }
             }
           }
@@ -287,14 +287,14 @@
         }
       }
     },
-    "d:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.Infrastructure\\Donations.Infrastructure.csproj": {
+    "D:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.Infrastructure\\Donations.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.Infrastructure\\Donations.Infrastructure.csproj",
+        "projectUniqueName": "D:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.Infrastructure\\Donations.Infrastructure.csproj",
         "projectName": "Donations.Infrastructure",
-        "projectPath": "d:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.Infrastructure\\Donations.Infrastructure.csproj",
+        "projectPath": "D:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.Infrastructure\\Donations.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Mitt\\.nuget\\packages\\",
-        "outputPath": "d:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.Infrastructure\\obj\\",
+        "outputPath": "D:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mitt\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -330,12 +330,6 @@
           "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[8.0.8, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.8, )"
             },

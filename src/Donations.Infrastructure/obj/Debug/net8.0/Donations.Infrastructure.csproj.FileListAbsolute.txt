@@ -1,5 +1,4 @@
 D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Infrastructure\bin\Debug\net8.0\Donations.Infrastructure.deps.json
-D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Infrastructure\bin\Debug\net8.0\Donations.Infrastructure.runtimeconfig.json
 D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Infrastructure\bin\Debug\net8.0\Donations.Infrastructure.dll
 D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Infrastructure\bin\Debug\net8.0\Donations.Infrastructure.pdb
 D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Infrastructure\obj\Debug\net8.0\Donations.Infrastructure.csproj.AssemblyReference.cache
@@ -10,6 +9,5 @@ D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Infrastructure\o
 D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Infrastructure\obj\Debug\net8.0\Donations.Infrastructure.dll
 D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Infrastructure\obj\Debug\net8.0\refint\Donations.Infrastructure.dll
 D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Infrastructure\obj\Debug\net8.0\Donations.Infrastructure.pdb
-D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Infrastructure\obj\Debug\net8.0\Donations.Infrastructure.genruntimeconfig.cache
 D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Infrastructure\obj\Debug\net8.0\ref\Donations.Infrastructure.dll
 D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Infrastructure\obj\Debug\net8.0\Donations.Infrastructure.sourcelink.json

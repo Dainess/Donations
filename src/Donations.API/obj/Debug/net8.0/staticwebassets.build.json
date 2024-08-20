@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "o42+Ay6/AvNSyG3582482Iy+KGluV/mVpD36WTh25yM=",
-  "Source": "Donations.Api",
-  "BasePath": "_content/Donations.Api",
+  "Hash": "bavJQQKEDXFf6rnX/N+/KbQ9RG41JIIsRHZzhmO76zw=",
+  "Source": "Donations.api",
+  "BasePath": "_content/Donations.api",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
