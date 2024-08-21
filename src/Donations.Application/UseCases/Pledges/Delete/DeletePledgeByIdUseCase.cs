@@ -33,7 +33,7 @@ namespace Donations.Application.UseCases.Pledges.Delete
             if (pledge is null)
                 throw new NotFoundException(ExceptionMessages.PLEDGE_NOT_FOUND_MESSAGE); //ResourceManagement.SpitResource("TRIP_NOT_FOUND")
 
-            donor.Pledges.Remove(pledge);
+            //donor.Pledges.Remove(pledge);
             _dbContext.Update(donor);
             _dbContext.SaveChanges();
         }

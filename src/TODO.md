@@ -24,3 +24,4 @@
 - Add entity filtering for all API controllers
 - change from Guid to INT primary key system handled by MySQL
 - We need to decide if we'll go the class or resource route for exception messages
+- Where's all the asyncs?

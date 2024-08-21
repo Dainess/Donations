@@ -1,13 +1,10 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Donations.Communication.Requests;
 using Donations.Communication.Responses;
 using Donations.Exception.ExceptionBase;
 using Donations.Exception.Resources;
 using Donations.Infrastructure;
 using Donations.Infrastructure.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace Donations.Application.UseCases.Pledges.Register
 {
@@ -17,12 +14,13 @@ namespace Donations.Application.UseCases.Pledges.Register
         {
             var dbContext = new DonationsDbContext();
 
-            var donor = dbContext
-            .Donors
-            //.Include(trip => trip.Activities)
-            //morre por causa do bug do SQLite
-            .FirstOrDefault(donor => donor.Id == donorId);
-        
+            var donor = dbContext.Donors
+            //.Donors.Include(donor => donor.Pledges)
+            //.FirstOrDefault(donor => donor.Id == donorId);
+            .Where(donor => donor.Id == donorId)
+            .Include(donor => donor.Pledges)
+            .First();
+
             Validate(donor, request);
 
             var entity = new Pledge
@@ -32,7 +30,7 @@ namespace Donations.Application.UseCases.Pledges.Register
                 DonorId = donorId
             };
 
-            donor!.Pledges.Add(entity);
+            donor!.Pledges.Append(entity);
             dbContext.Donors.Update(donor);
 
             //trip!.Activities.Add(entity);

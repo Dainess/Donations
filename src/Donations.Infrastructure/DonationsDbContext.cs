@@ -6,7 +6,7 @@ namespace Donations.Infrastructure;
 public class DonationsDbContext : DbContext
 {
     public DbSet<Donor> Donors { get; set; }
-    //public DbSet<Pledge> Pledges { get; set; }
+    public DbSet<Pledge> Pledges { get; set; }
     //public DbSet<Payment> Payments { get; set; }
     public DbSet<Change> Changelog { get; set; }
     //public DbSet<PledgePayment> PledgesPayments { get; set; }
@@ -33,7 +33,7 @@ public class DonationsDbContext : DbContext
     {
         base.OnModelCreating(modelBuilder);
 
-        modelBuilder.Entity<Pledge>().ToTable("Pledges");
-        modelBuilder.Entity<Payment>().ToTable("Payments");
+        modelBuilder.Entity<Pledge>().ToTable("pledges");
+        modelBuilder.Entity<Payment>().ToTable("payments");
     }
 }

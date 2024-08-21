@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace Donations.Infrastructure.Entities;
 
 public class Donor 
@@ -7,7 +9,7 @@ public class Donor
     public string Address { get; set; } = string.Empty;
     public bool ActiveStatus { get; set; } = true;
     public IList<Payment> Payments = [];
-    public IList<Pledge> Pledges = [];
+    public IEnumerable<Pledge> Pledges = new List<Pledge>();
 
     //public DateTime RegisteredSince { get; set; }
     //public DateTime LastPledge { get; set; }
