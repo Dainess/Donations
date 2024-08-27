@@ -23,5 +23,6 @@
 - upload to github
 - Add entity filtering for all API controllers
 - change from Guid to INT primary key system handled by MySQL
+    - this may be the root cause of trying to add row to child table through parent table not working 
 - We need to decide if we'll go the class or resource route for exception messages
 - Where's all the asyncs?

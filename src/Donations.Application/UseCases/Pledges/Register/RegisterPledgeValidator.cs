@@ -8,12 +8,12 @@ namespace Donations.Application.UseCases.Pledges.Register
     {
         public RegisterPledgeValidator()
         {
-            RuleFor(request => request.PledgeDate)
-                .GreaterThanOrEqualTo(DateTime.UtcNow)
+            RuleFor(request => request.PledgeDate.Day)
+                .GreaterThanOrEqualTo(DateTime.UtcNow.Day)
                 .WithMessage(ExceptionMessages.PLEDGE_DATE_MUST_BE_AT_LEAST_TODAY_MESSAGE); //ResourceManagement.SpitResource("NAME_EMPTY")
             RuleFor(request => request.Amount)
                 .NotEmpty()
-                .WithMessage(ExceptionMessages.PAYMENT_NOT_FOUND_MESSAGE); //ResourceManagement.SpitResource("DATE_TRIP_MUST_BE_LATER_THAN_TODAY")
+                .WithMessage(ExceptionMessages.AMOUNT_NOT_EMPTY_MESSAGE); //ResourceManagement.SpitResource("DATE_TRIP_MUST_BE_LATER_THAN_TODAY")
         }     
     }
 }

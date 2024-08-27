@@ -1,11 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Donations.Communication.Responses;
 using Donations.Exception.ExceptionBase;
 using Donations.Exception.Resources;
 using Donations.Infrastructure;
+using Microsoft.EntityFrameworkCore;
 
 namespace Donations.Application.UseCases.Donors.GetById
 {
@@ -19,8 +16,13 @@ namespace Donations.Application.UseCases.Donors.GetById
 
         public ResponseFullDonorJson Execute(Guid id) 
         {
-            var donor = _dbContext
-                .Donors
+            // var donor = _dbContext.Donors
+            //     .Where(donor => donor.Id == id)
+            //     .Include(donor => donor.Pledges)
+            //     .FirstOrDefault(donor => donor.Id == id);
+
+            var donor = _dbContext.Donors
+                .Include(donor => donor.Pledges)
                 .FirstOrDefault(donor => donor.Id == id);
 
             if (donor is null)

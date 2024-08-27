@@ -1,9 +1,12 @@
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace Donations.Infrastructure.Entities;
 
 public class Pledge 
 {
     public Guid Id { get; set; } = Guid.NewGuid();
     public Donor Donor{ get; set; } = null!;
+    [ForeignKey("Donor")]
     public Guid DonorId { get; set; } 
     public DateTime PledgeDate { get; set; }
     public decimal Amount { get; set; }

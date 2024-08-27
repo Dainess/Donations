@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.API\\Donations.api.csproj": {}
+    "D:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.API\\Donations.Api.csproj": {}
   },
   "projects": {
-    "D:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.API\\Donations.api.csproj": {
+    "D:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.API\\Donations.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.API\\Donations.api.csproj",
-        "projectName": "Donations.api",
-        "projectPath": "D:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.API\\Donations.api.csproj",
+        "projectUniqueName": "D:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.API\\Donations.Api.csproj",
+        "projectName": "Donations.Api",
+        "projectPath": "D:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.API\\Donations.Api.csproj",
         "packagesPath": "C:\\Users\\Mitt\\.nuget\\packages\\",
         "outputPath": "D:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.API\\obj\\",
         "projectStyle": "PackageReference",

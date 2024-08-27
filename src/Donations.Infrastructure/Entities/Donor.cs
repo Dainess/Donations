@@ -8,8 +8,8 @@ public class Donor
     public string Name { get; set; } = string.Empty;
     public string Address { get; set; } = string.Empty;
     public bool ActiveStatus { get; set; } = true;
-    public IList<Payment> Payments = [];
-    public IEnumerable<Pledge> Pledges = new List<Pledge>();
+    public IList<Payment> Payments { get; set; } = [];
+    public IList<Pledge> Pledges { get; set; } = [];
 
     //public DateTime RegisteredSince { get; set; }
     //public DateTime LastPledge { get; set; }

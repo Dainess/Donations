@@ -35,5 +35,6 @@ public class DonationsDbContext : DbContext
 
         modelBuilder.Entity<Pledge>().ToTable("pledges");
         modelBuilder.Entity<Payment>().ToTable("payments");
+        //modelBuilder.Entity<PledgePayment>().ToTable("pledgepayment");
     }
 }

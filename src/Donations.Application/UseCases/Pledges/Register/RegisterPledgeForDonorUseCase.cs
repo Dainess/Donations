@@ -14,12 +14,13 @@ namespace Donations.Application.UseCases.Pledges.Register
         {
             var dbContext = new DonationsDbContext();
 
-            var donor = dbContext.Donors
-            //.Donors.Include(donor => donor.Pledges)
-            //.FirstOrDefault(donor => donor.Id == donorId);
-            .Where(donor => donor.Id == donorId)
-            .Include(donor => donor.Pledges)
-            .First();
+            var donor = dbContext
+                .Donors
+                .Where(donor => donor.Id == donorId)
+                .Include(donor => donor.Pledges)
+                .First();
+                // .Include(donor => donor.Pledges)
+                // .FirstOrDefault(donor => donor.Id == donorId);
 
             Validate(donor, request);
 
@@ -27,19 +28,15 @@ namespace Donations.Application.UseCases.Pledges.Register
             {
                 PledgeDate = request.PledgeDate,
                 Amount = request.Amount,
-                DonorId = donorId
+                DonorId = donorId,
+                Donor = donor
             };
 
-            donor!.Pledges.Append(entity);
+            dbContext.Pledges.Add(entity);
+            //donor!.Pledges.Add(entity);
+            //var newDonor = dbContext.Donors.Include(donor => donor.Pledges).SingleOrDefault(donor => donor.Pledges.FirstOrDefault(pledge => pledge.Id == entity.Id) != null);
             dbContext.Donors.Update(donor);
 
-            //trip!.Activities.Add(entity);
-            //06 meteu que só de fazer esse Add dentro dessa IList o EntityFramework vai entender que é pra adicionar essa parada dentro da tabela activities 
-            //e meter a private key tripId 
-            //dbContext.Trips.Update(trip);
-            //essas aqui morrem por causa do bug do SQLite
-            
-            //dbContext.Activities.Add(entity);
             dbContext.SaveChanges();
 
             return new ResponseShortPledgeJson
@@ -47,7 +44,7 @@ namespace Donations.Application.UseCases.Pledges.Register
                 Id = entity.Id,
                 DonorId = entity.DonorId,
                 PledgeDate = entity.PledgeDate,
-                Amount = entity.Amount
+                Amount = entity.Amount,
             };
         }
 
