@@ -7,8 +7,9 @@ namespace Donations.Communication.Responses
 {
     public class ResponseShortPaymentJson
     {
-        public Guid Id { get; set; }
-        public Guid DonorId { get; set; } 
+        public int Id { get; set; }
+        public int DonorId { get; set; } 
+        public string DonorName { get; set; } = string.Empty;
         public DateTime PaymentDate { get; set; }
         public decimal Amount { get; set; }
     }

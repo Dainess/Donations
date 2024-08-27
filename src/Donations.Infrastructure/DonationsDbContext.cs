@@ -6,7 +6,7 @@ namespace Donations.Infrastructure;
 public class DonationsDbContext : DbContext
 {
     public DbSet<Donor> Donors { get; set; }
-    public DbSet<Pledge> Pledges { get; set; }
+    //public DbSet<Pledge> Pledges { get; set; }
     //public DbSet<Payment> Payments { get; set; }
     public DbSet<Change> Changelog { get; set; }
     //public DbSet<PledgePayment> PledgesPayments { get; set; }
@@ -35,6 +35,23 @@ public class DonationsDbContext : DbContext
 
         modelBuilder.Entity<Pledge>().ToTable("pledges");
         modelBuilder.Entity<Payment>().ToTable("payments");
-        //modelBuilder.Entity<PledgePayment>().ToTable("pledgepayment");
+        modelBuilder.Entity<PledgePayment>().ToTable("pledgepayment");
+
+        modelBuilder.Entity<PledgePayment>().HasKey(pp => new { pp.PledgeId, pp.PaymentId});
+
+        // modelBuilder.Entity<Payment>()
+        //     .HasMany(p => p.Pledges)
+        //     .WithMany(p => p.Payments)
+        //     .UsingEntity<PledgePayment>(
+        //         j => j
+        //             .HasOne(pt => pt.Pledge)
+        //             .WithMany(p => p.PledgePayments)
+        //             .HasForeignKey(pt => pt.PledgeId),
+        //         j => j
+        //             .HasOne(pt => pt.Payment)
+        //             .WithMany(p => p.PledgePayments)
+        //             .HasForeignKey(pt => pt.PaymentId)
+        //     );
+
     }
 }

@@ -10,7 +10,7 @@ namespace Donations.Application.UseCases.Pledges.Register
 {
     public class RegisterPledgeForDonorUseCase
     {
-        public ResponseShortPledgeJson Execute(Guid donorId, RequestRegisterPledgeJson request)
+        public ResponseShortPledgeJson Execute(int donorId, RequestRegisterPledgeJson request)
         {
             var dbContext = new DonationsDbContext();
 
@@ -19,8 +19,6 @@ namespace Donations.Application.UseCases.Pledges.Register
                 .Where(donor => donor.Id == donorId)
                 .Include(donor => donor.Pledges)
                 .First();
-                // .Include(donor => donor.Pledges)
-                // .FirstOrDefault(donor => donor.Id == donorId);
 
             Validate(donor, request);
 
@@ -32,9 +30,7 @@ namespace Donations.Application.UseCases.Pledges.Register
                 Donor = donor
             };
 
-            dbContext.Pledges.Add(entity);
-            //donor!.Pledges.Add(entity);
-            //var newDonor = dbContext.Donors.Include(donor => donor.Pledges).SingleOrDefault(donor => donor.Pledges.FirstOrDefault(pledge => pledge.Id == entity.Id) != null);
+            donor!.Pledges.Add(entity);
             dbContext.Donors.Update(donor);
 
             dbContext.SaveChanges();
@@ -43,8 +39,9 @@ namespace Donations.Application.UseCases.Pledges.Register
             {
                 Id = entity.Id,
                 DonorId = entity.DonorId,
+                DonorName = entity.Donor.Name,
                 PledgeDate = entity.PledgeDate,
-                Amount = entity.Amount,
+                Amount = entity.Amount
             };
         }
 
@@ -55,11 +52,6 @@ namespace Donations.Application.UseCases.Pledges.Register
 
             var validator = new RegisterPledgeValidator();
             var result = validator.Validate(request);
-
-            // if (donor.StartDate.Date > request.Date || donor.EndDate.Date < request.Date)
-            // {
-            //     result.Errors.Add(new ValidationFailure("Date", ResourceManagement.SpitResource("DATE_NOT_WITHIN_TRAVEL_PERIOD")));
-            // }
 
             if (result.IsValid == false)
             {

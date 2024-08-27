@@ -11,6 +11,7 @@ namespace Donations.Exception.Resources
         public const string AMOUNT_NOT_EMPTY_MESSAGE = "The amount cannot be empty";
         public const string PLEDGE_DATE_MUST_BE_AT_LEAST_TODAY_MESSAGE = "Plege date must be at least for today";
         public const string PAYMENT_DATE_MUST_BE_AT_LEAST_TODAY_MESSAGE = "Payment date must be at least for today";
+        public const string DONOR_REGISTRATION_MUST_BE_AT_LEAST_TODAY_MESSAGE = "Donor registration date must be at least for today";
         //public const string PAYMENT_DATE_MUST_BE_AT_LEAST_THE_RESPECTIVE_PLEDGE_DATE_MESSAGE = "Payment date must be at least";
         
     }

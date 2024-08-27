@@ -14,7 +14,7 @@ namespace Donations.Application.UseCases.Donors.GetById
             _dbContext = new DonationsDbContext();
         }
 
-        public ResponseFullDonorJson Execute(Guid id) 
+        public ResponseFullDonorJson Execute(int id) 
         {
             // var donor = _dbContext.Donors
             //     .Where(donor => donor.Id == id)
@@ -34,6 +34,7 @@ namespace Donations.Application.UseCases.Donors.GetById
                 Name = donor.Name,
                 ActiveStatus = donor.ActiveStatus,
                 Address = donor.Address,
+                RegisteredSince = donor.RegisteredSince,
                 Pledges = donor.Pledges.Select(pledge => new ResponseShortPledgeJson{
                     Id = pledge.Id,
                     DonorId = pledge.DonorId,

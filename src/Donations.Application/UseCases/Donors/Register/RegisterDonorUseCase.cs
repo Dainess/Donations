@@ -17,6 +17,7 @@ public class RegisterDonorUseCase
         {
             Name = request.Name,
             Address = request.Address,
+            RegisteredSince = request.RegisteredSince
         };
 
         dbContext.Donors.Add(entity);
@@ -28,7 +29,8 @@ public class RegisterDonorUseCase
             Id = entity.Id,
             Name = entity.Name,
             Address = entity.Address,
-            ActiveStatus = entity.ActiveStatus
+            ActiveStatus = entity.ActiveStatus,
+            RegisteredSince = entity.RegisteredSince,
         };
     }
 

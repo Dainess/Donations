@@ -4,10 +4,12 @@ namespace Donations.Infrastructure.Entities;
 
 public class Change 
 {
-    public Guid Id { get; set; } = Guid.NewGuid();
+    public int Id { get; set; }
     public string TableName { get; set; } = string.Empty;
-    public Guid RecordId { get; set; }
+    public int RecordId { get; set; }
     public DateTime TimeOfLog { get; set; }
     public string ChangeDescription { get; set;} = string.Empty;
     public ChangeType TypeOfChange { get; set; }
+    public string ChangedBy { get; set; } = string.Empty;
+    //Public string TypeOfChange { get; set; }
 }

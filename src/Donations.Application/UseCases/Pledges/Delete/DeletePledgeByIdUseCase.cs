@@ -12,7 +12,7 @@ namespace Donations.Application.UseCases.Pledges.Delete
             _dbContext = new DonationsDbContext();
         }
 
-        public void Execute(Guid donorId, Guid pledgeId) 
+        public void Execute(int donorId, int pledgeId) 
         {
             var donor = _dbContext
                 .Donors

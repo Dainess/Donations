@@ -19,6 +19,7 @@ namespace Donations.Application.UseCases.Donors.GetAll
                     Name = donor.Name,
                     ActiveStatus = donor.ActiveStatus,
                     Address = donor.Address,
+                    RegisteredSince = donor.RegisteredSince,
                 }).ToList()
             };
         }

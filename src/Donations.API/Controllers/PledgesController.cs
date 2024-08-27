@@ -14,7 +14,7 @@ namespace Donations.API.Controllers
         [ProducesResponseType(typeof(ResponseErrorsJson),StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(ResponseErrorsJson), StatusCodes.Status404NotFound)]
         public IActionResult Register(
-            [FromRoute] Guid donorId,
+            [FromRoute] int donorId,
             [FromBody] RequestRegisterPledgeJson request)
         {
             var useCase = new RegisterPledgeForDonorUseCase();
@@ -27,8 +27,8 @@ namespace Donations.API.Controllers
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(typeof(ResponseErrorsJson),StatusCodes.Status404NotFound)]
         public IActionResult DeleteActivityById(
-            [FromRoute] Guid donorId, 
-            [FromRoute] Guid pledgeId) 
+            [FromRoute] int donorId, 
+            [FromRoute] int pledgeId) 
         {
             var useCase = new DeletePledgeByIdUseCase();
             useCase.Execute(donorId, pledgeId);

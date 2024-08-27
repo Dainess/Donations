@@ -4,14 +4,14 @@ namespace Donations.Infrastructure.Entities;
 
 public class Pledge 
 {
-    public Guid Id { get; set; } = Guid.NewGuid();
-    public Donor Donor{ get; set; } = null!;
-    [ForeignKey("Donor")]
-    public Guid DonorId { get; set; } 
+    public int Id { get; set; } 
+    //[ForeignKey("Donor")]
+    public int DonorId { get; set; } 
+    public Donor Donor { get; set; } = null!;
     public DateTime PledgeDate { get; set; }
     public decimal Amount { get; set; }
     //public List<PledgePayment> PledgesPayments { get; } = [];
-    public List<Payment> Payments { get; } = [];
+    public IList<Payment> Payments { get; set; } = [];
     
 
     //public bool ActiveStatus { get; set; }

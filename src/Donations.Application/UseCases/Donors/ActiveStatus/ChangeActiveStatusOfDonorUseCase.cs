@@ -13,7 +13,7 @@ namespace Donations.Application.UseCases.Donors.ActiveStatus
             _dbContext = new DonationsDbContext();
         }
 
-        public void Execute(Guid donorId, bool status)
+        public void Execute(int donorId, bool status)
         {
             var donor = _dbContext
                 .Donors

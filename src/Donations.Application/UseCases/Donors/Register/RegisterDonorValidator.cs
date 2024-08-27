@@ -14,6 +14,10 @@ namespace Donations.Application.UseCases.Donors.Register
             RuleFor(request => request.Address)
                 .NotEmpty()
                 .WithMessage(ExceptionMessages.ADDRESS_EMPTY_MESSAGE); //ResourceManagement.SpitResource("DATE_TRIP_MUST_BE_LATER_THAN_TODAY")
+            RuleFor(request => request.RegisteredSince)
+                .GreaterThanOrEqualTo(DateTime.UtcNow.Date)
+                .WithMessage(ExceptionMessages.DONOR_REGISTRATION_MUST_BE_AT_LEAST_TODAY_MESSAGE);
+
         }
     }
 }

@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Donations.Exception.ExceptionBase;
 using Donations.Exception.Resources;
 using Donations.Infrastructure;
@@ -16,11 +12,10 @@ namespace Donations.Application.UseCases.Donors.Delete
             _dbContext = new DonationsDbContext();
         }
 
-        public void Execute(Guid id) 
+        public void Execute(int id) 
         {
             var donor = _dbContext
                 .Donors
-                //.Include(trip => trip.Activities)
                 .FirstOrDefault(donor => donor.Id == id);
 
             if (donor is null)

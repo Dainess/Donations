@@ -36,7 +36,7 @@ public class DonorsController : ControllerBase
     [Route("{id}")]
     [ProducesResponseType(typeof(ResponseFullDonorJson),StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(ResponseErrorsJson),StatusCodes.Status404NotFound)]
-    public IActionResult GetById([FromRoute] Guid id) 
+    public IActionResult GetById([FromRoute] int id) 
     {
         var useCase = new GetDonorByIdUseCase();
         var response = useCase.Execute(id);
@@ -48,7 +48,7 @@ public class DonorsController : ControllerBase
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(typeof(ResponseErrorsJson), StatusCodes.Status404NotFound)]
     public IActionResult ChangeActivityStatus(
-        [FromRoute] Guid donorId,
+        [FromRoute] int donorId,
         [FromRoute] bool status)
     {
         var useCase = new ChangeActiveStatusOfDonorUseCase();
@@ -73,7 +73,7 @@ public class DonorsController : ControllerBase
     [Route("{id}")]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(typeof(ResponseErrorsJson),StatusCodes.Status404NotFound)]
-    public IActionResult DeleteById([FromRoute] Guid id) 
+    public IActionResult DeleteById([FromRoute] int id) 
     {
         var useCase = new DeleteDonorByIdUseCase();
         useCase.Execute(id);

@@ -7,10 +7,11 @@ namespace Donations.Communication.Responses
 {
     public class ResponseFullDonorJson
     {
-        public Guid Id { get; set; }
+        public int Id { get; set; }
         public string Name { get; set; } = string.Empty;
         public string Address { get; set; } = string.Empty;
         public bool ActiveStatus { get; set; } 
+        public DateTime RegisteredSince { get; set; }
         public IList<ResponseShortPledgeJson> Pledges { get; set; } = [];
         public IList<ResponseShortPaymentJson> Payments { get; set; } = [];
     }
