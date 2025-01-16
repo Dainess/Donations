@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kWskBWtZhxA=",
+  "dgSpecHash": "knxJ1RhJTN0=",
   "success": true,
-  "projectFilePath": "D:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.API\\Donations.Api.csproj",
+  "projectFilePath": "D:\\Backup2023\\ProgProjects\\Professional\\SelectAssistants\\src\\Donations.API\\Donations.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mitt\\.nuget\\packages\\fluentvalidation\\8.2.1\\fluentvalidation.8.2.1.nupkg.sha512",
     "C:\\Users\\Mitt\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.7\\microsoft.aspnetcore.openapi.8.0.7.nupkg.sha512",

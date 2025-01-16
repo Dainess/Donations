@@ -6,6 +6,7 @@ using Donations.Application.UseCases.Donors.GetAll;
 using Donations.Application.UseCases.Donors.GetById;
 using Donations.Application.UseCases.Donors.Delete;
 using Donations.Application.UseCases.Donors.ActiveStatus;
+using Donations.Application.UseCases.Donors.Address;
 
 namespace Donations.Api.Controllers;
 [Route("api/[controller]")]
@@ -56,18 +57,18 @@ public class DonorsController : ControllerBase
         return NoContent();
     }
 
-    // [HttpPut]
-    // [Route("{donorId}/address/{address}")]
-    // [ProducesResponseType(StatusCodes.Status204NoContent)]
-    // [ProducesResponseType(typeof(ResponseErrorsJson), StatusCodes.Status404NotFound)]
-    // public IActionResult ChangeAddress(
-    //     [FromRoute] Guid donorId,
-    //     [FromRoute] bool address)
-    // {
-    //     var useCase = new ChangeAddressOfDonorUseCase();
-    //     useCase.Execute(donorId, address);
-    //     return NoContent();
-    // }
+    [HttpPut]
+    [Route("{donorId}/address/{address}")]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    [ProducesResponseType(typeof(ResponseErrorsJson), StatusCodes.Status404NotFound)]
+    public IActionResult ChangeAddress(
+        [FromRoute] int donorId,
+        [FromRoute] string address)
+    {
+        var useCase = new ChangeAddressOfDonorUseCase();
+        useCase.Execute(donorId, address);
+        return NoContent();
+    }
 
     [HttpDelete]
     [Route("{id}")]

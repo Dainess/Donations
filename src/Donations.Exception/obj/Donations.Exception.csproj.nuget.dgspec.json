@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.Exception\\Donations.Exception.csproj": {}
+    "D:\\Backup2023\\ProgProjects\\Professional\\SelectAssistants\\src\\Donations.Exception\\Donations.Exception.csproj": {}
   },
   "projects": {
-    "D:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.Exception\\Donations.Exception.csproj": {
+    "D:\\Backup2023\\ProgProjects\\Professional\\SelectAssistants\\src\\Donations.Exception\\Donations.Exception.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.Exception\\Donations.Exception.csproj",
+        "projectUniqueName": "D:\\Backup2023\\ProgProjects\\Professional\\SelectAssistants\\src\\Donations.Exception\\Donations.Exception.csproj",
         "projectName": "Donations.Exception",
-        "projectPath": "D:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.Exception\\Donations.Exception.csproj",
+        "projectPath": "D:\\Backup2023\\ProgProjects\\Professional\\SelectAssistants\\src\\Donations.Exception\\Donations.Exception.csproj",
         "packagesPath": "C:\\Users\\Mitt\\.nuget\\packages\\",
-        "outputPath": "D:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.Exception\\obj\\",
+        "outputPath": "D:\\Backup2023\\ProgProjects\\Professional\\SelectAssistants\\src\\Donations.Exception\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mitt\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -61,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

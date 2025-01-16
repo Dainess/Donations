@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Donations.Communication
-build_property.ProjectDir = D:\Backup2023\Progs\Professional\SelectAssistants\src\Donations.Communication\
+build_property.ProjectDir = D:\Backup2023\ProgProjects\Professional\SelectAssistants\src\Donations.Communication\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

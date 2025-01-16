@@ -724,11 +724,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.Infrastructure\\Donations.Infrastructure.csproj",
+      "projectUniqueName": "D:\\Backup2023\\ProgProjects\\Professional\\SelectAssistants\\src\\Donations.Infrastructure\\Donations.Infrastructure.csproj",
       "projectName": "Donations.Infrastructure",
-      "projectPath": "D:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.Infrastructure\\Donations.Infrastructure.csproj",
+      "projectPath": "D:\\Backup2023\\ProgProjects\\Professional\\SelectAssistants\\src\\Donations.Infrastructure\\Donations.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\Mitt\\.nuget\\packages\\",
-      "outputPath": "D:\\Backup2023\\Progs\\Professional\\SelectAssistants\\src\\Donations.Infrastructure\\obj\\",
+      "outputPath": "D:\\Backup2023\\ProgProjects\\Professional\\SelectAssistants\\src\\Donations.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Mitt\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -788,7 +788,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

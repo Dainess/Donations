@@ -198,17 +198,26 @@
           "FluentValidation": "8.2.1"
         },
         "runtime": {
-          "Donations.Application.dll": {}
+          "Donations.Application.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Donations.Communication/1.0.0": {
         "runtime": {
-          "Donations.Communication.dll": {}
+          "Donations.Communication.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Donations.Exception/1.0.0": {
         "runtime": {
-          "Donations.Exception.dll": {}
+          "Donations.Exception.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Donations.Infrastructure/1.0.0": {
@@ -217,7 +226,10 @@
           "Pomelo.EntityFrameworkCore.MySql": "8.0.2"
         },
         "runtime": {
-          "Donations.Infrastructure.dll": {}
+          "Donations.Infrastructure.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
